@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Insurance Company</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li></li>
+        <li><a href="about.html" class="h">About</a></li>
+        <div class="dropdown">
+            <button class="dropbtn">Products</i></button>
+            <div class="dropdown-content">
+                <a href="HomIns.html">Home Insurance</a>
+                <a href="TravIns.html">Travel Insurance</a>
+                <a href="HealIns.html">Health Insurance</a>
+                <a href="AutoIns.html">Automobile Insurance</a>
+            </div>
+        </div>
+        </li>
+        <li><a href="http://localhost:8501/" class="h">Register Now!</a></li>
+        <li><a href="claims.html" class="h">Claims</a></li>
+    </ul>
+    </nav>
+    <br>
+    <center><div class="home_top">
+    <h1>HACX Insurance</h1>
+    <br>
+    <p>Enter only relevant information and we will suggest policies that suit you the best.</p>
+    <br><br><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum hic fuga, laborum quas magnam voluptatum ex culpa nihil minus provident dolores! Omnis facilis, recusandae nihil esse rerum eveniet rem!</p>
+    </div></center>
+    <iframe id="chatbot" src="http://localhost:8501/" width="350" height="500" style="position: absolute; right: 1%; bottom: 75px; border-radius: 25px; display: none;"></iframe>
+    <button id="chatbot_out" onclick="show()"></button>
+    <footer>
+    <div>
+        <ul>
+            <li><p>Customer Support Phone No.: +91 9090909090/09</p></li>
+            <li><p>Customer Support Email: hackXsupport@gmail.com</p></li>
+        </ul>
+    </div>
+    </footer>
+    <script>
+        const chabot = document.getElementById("chatbot");
+        let show = function() {
+            if(chabot.style.display === "none") {
+                chabot.style.display="block";
+            }
+            else {
+                chabot.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Home Insurance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="darkblue"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Home</a></li>
+            <li><a href="about.html" class="h">About</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Products</i></button>
+                <div class="dropdown-content">
+                    <a href="HomIns.html">Home Insurance</a>
+                    <a href="TravIns.html">Travel Insurance</a>
+                    <a href="HealIns.html">Health Insurance</a>
+                </div>
+            </div>
+            </li>
+            <li><a href="http://localhost:8501/" class="h">Register Now!</a></li>
+            <li><a href="claims.html" class="h">Claims</a></li>
+        </ul>
+    </nav>
+    <iframe id="chatbot" src="http://localhost:8501/" width="350" height="500" style="position: absolute; right: 1%; bottom: 75px; border-radius: 25px; display: none;"></iframe>
+    <button id="chatbot_out" onclick="show()"></button>
+    <footer>
+    <div>
+        <ul>
+            <li><p>Customer Support Phone No.: +91 9090909090/09</p></li>
+            <li><p>Customer Support Email: hackXsupport@gmail.com</p></li>
+        </ul>
+    </div>
+    </footer>
+    <iframe id="chatbot" src="http://localhost:8501/" width="350" height="500" style="position: absolute; right: 1%; bottom: 75px; border-radius: 25px; display: none;"></iframe>
+    <button id="chatbot_out" onclick="show()"></button>
+    <script>
+        const chabot = document.getElementById("chatbot");
+        let show = function() {
+            if(chabot.style.display === "none") {
+                chabot.style.display="block";
+            }
+            else {
+                chabot.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
